@@ -1,0 +1,171 @@
+.queue-container1 {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.queue-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1500px; 
+}
+.list-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.queue-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left; 
+  margin: 0;      
+}
+
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+
+.patients-table th,
+.patients-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eef2f7; 
+  height: 70px;                 
+  vertical-align: middle;       
+}
+
+
+.patients-table thead th {
+  background-color: #f8fafc;
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.patients-table tbody tr:hover {
+  background-color: #f5ffff;
+}
+
+
+.empty-queue-message {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+
+.patients-table .edit-button,
+.patients-table .delete-button,
+.patients-table .save-button {
+  padding: 0.5rem 1rem;;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-button {
+  background-color: #ebf4ff;
+  color: #3b82f6;
+}
+.edit-button:hover {
+  background-color: #dbeafe;
+}
+
+.delete-button {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+.delete-button:hover {
+  background-color: #fecaca;
+}
+
+
+.patients-table .inline-edit-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.patients-table .inline-edit-input:focus {
+  outline: none;
+  border-color: #005acd;
+  box-shadow: 0 0 0 3px rgba(0, 90, 205, 0.15);
+}
+
+
+.patients-table .save-button {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+.patients-table .save-button:hover {
+  background-color: #b3e9c5;
+}
+
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sortable-header:hover {
+  background-color: #eef2f7;
+}
+
+
+.sort-indicator {
+  margin-left: 8px;
+  font-size: 0.7rem;
+  color: #718096;
+}
+.patients-table .inline-edit-input.age-input {
+  width: 80px;
+}
+
+
+
+.search-container1 {
+  width: 100%; 
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%; 
+  padding: 0.8rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #005acd;
+  box-shadow: 0 0 0 3px rgba(0, 90, 205, 0.15);
+
+}

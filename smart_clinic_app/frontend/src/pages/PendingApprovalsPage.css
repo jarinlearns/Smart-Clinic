@@ -1,0 +1,78 @@
+.billing-container { 
+    max-width: 1500px; 
+    margin: 0 auto; 
+    padding: 2rem; 
+}
+
+.billing-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.billing-table th, .billing-table td { 
+    padding: 1rem; 
+    text-align: left; 
+    border-bottom: 1px solid #e9ecef; 
+}
+
+.billing-table thead { 
+    background-color: #f8f9fa; 
+}
+
+.generate-bill-btn {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 0.9rem;
+
+  transition: all 0.2s ease-in-out;
+}
+.generate-bill-btn:hover{
+    background-color: #0056b3; 
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem; 
+}
+
+.action-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: none; 
+  cursor: pointer; 
+  font-family: inherit; 
+  transition: all 0.2s ease-in-out;
+}
+
+.action-link.approve {
+  background-color: #007bff; 
+  transition: all 0.2s ease-in-out;
+}
+
+.action-link.remove {
+  background-color: #dc3545; 
+  transition: all 0.2s ease-in-out;
+}
+
+.action-link.approve:hover {
+  background-color: #0056b3; 
+  transition: all 0.2s ease-in-out;
+}
+.action-link.remove:hover {
+  background-color: #a71d2a; 
+  transition: all 0.2s ease-in-out;
+}

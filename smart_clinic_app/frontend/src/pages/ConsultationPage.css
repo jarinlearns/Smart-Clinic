@@ -1,0 +1,140 @@
+.consultation-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.patient-banner {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.patient-banner h2 { margin-top: 0; }
+.patient-banner p { margin-bottom: 0.5rem; }
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.consultation-panel {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  flex-grow: 1; 
+}
+
+.prescription-form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.prescription-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.prescription-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.prescription-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.prescription-table th, .prescription-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.remove-btn-small {
+    background-color: #fed7d7;
+    color: #c53030;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.actions-bar {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.finish-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.finish-button:hover {
+    background-color: #218838;
+}
+
+.action-button.primary {
+    background-color: #005acd;
+    color: white;
+    border: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-button.primary:hover {
+    background-color: #0045a1;
+}
+
+.cancel-consult-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 15px;
+}
+
+.cancel-consult-button:hover {
+  background-color: #c82333;
+}
+.diagnosis-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+}

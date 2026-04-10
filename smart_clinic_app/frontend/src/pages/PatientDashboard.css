@@ -1,0 +1,132 @@
+.patient-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.patient-dashboard-container h1 {
+  margin-bottom: 0.5rem;
+}
+
+.patient-dashboard-container > p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.doctor-card {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.doctor-specialty {
+  display: block;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.doctor-fee {
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.request-consult-btn{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.request-consult-btn:hover{
+  background-color: #0056b3;
+}
+
+
+.ai-recommender-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ai-recommender-card h3 {
+  margin-top: 0;
+}
+
+.ai-form {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.ai-form textarea {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.ai-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.ai-form button:disabled {
+  background-color: #adb5bd;
+}
+
+.ai-recommendation {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  border-left: 5px solid #007bff;
+}
+
+.ai-recommendation p {
+  margin: 0;
+  font-weight: 500;
+}

@@ -1,0 +1,153 @@
+
+.modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: white; padding: 0; 
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #a0aec0;
+    transition: color 0.2s;
+}
+.close-button:hover {
+    color: #4a5568;
+}
+
+
+.prescription-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+    background-color: #f8fafc;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+}
+.prescription-details-grid strong {
+    color: #4a5568;
+}
+
+
+.prescription-section {
+    padding: 1rem 2rem;
+}
+.prescription-section h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+}
+.notes-box {
+    background-color: #f8fafc;
+    border: 1px solid #eef2f7;
+    padding: 1rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+
+.medicines-prescribed-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.medicines-prescribed-table th, .medicines-prescribed-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eef2f7;
+    vertical-align: top;
+}
+.medicines-prescribed-table thead th {
+    font-size: 0.8rem;
+    color: #718096;
+    text-transform: uppercase;
+}
+.medicines-prescribed-table tbody td {
+    font-size: 0.9rem;
+}
+
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.modal-actions button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.cancel-button {
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
+.cancel-button:hover {
+    background-color: #cbd5e0;
+}
+.fill-button {
+    background-color: #28a745;
+    color: white;
+}
+.fill-button:hover {
+    background-color: #218838;
+}
+
+.prescription-modal.large {
+  max-width: 900px; 
+}
+
+.medicines-prescribed-table.interactive th,
+.medicines-prescribed-table.interactive td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.medicines-prescribed-table.interactive td:nth-child(2) {
+  text-align: left; 
+}
+
+.quantity-input {
+  width: 70px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.fill-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}

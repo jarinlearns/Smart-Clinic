@@ -1,0 +1,70 @@
+.add-patient-form-container {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #eef2f7;
+}
+
+.add-patient-form-container h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.inline-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.inline-form .form-group {
+    margin-bottom: 0;
+    flex: 1 1 auto;
+}
+
+.inline-form .form-group label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.inline-form .symptoms-group {
+    flex-grow: 2; 
+}
+
+.inline-form input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.inline-form .submit-button {
+  background-color: #005acd;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: fit-content;
+}
+
+
+.success-message {
+  color: #2f855a;
+  background-color: #c6f6d5;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #c53030;
+  background-color: #fed7d7;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}

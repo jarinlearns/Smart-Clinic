@@ -1,0 +1,145 @@
+.procurement-history-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.table-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 1.5rem;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.history-table thead th {
+    background-color: #edf2f7;
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.history-table thead th button {
+  background: none; border: none; color: inherit; font-family: inherit;
+  font-size: inherit; font-weight: inherit; text-transform: inherit;
+  cursor: pointer; padding: 0; text-align: left; width: 100%;
+}
+
+.sortable-header {
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.2s ease;
+}
+
+.sortable-header:hover {
+    background-color: #e2e8f0;
+}
+.search-container{
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.stats-container-revenue {
+  display: flex;
+  gap: 2rem; 
+  margin: 1.5rem;
+}
+
+.stat-card-revenue {
+  flex: 1; 
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card-revenue h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.stat-card-revenue p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #2d3748;
+}
+
+
+.procurement-cost-card {
+  border-left: 5px solid #dd6b20; 
+}
+
+.items-procured-card {
+  border-left: 5px solid #3182ce; 
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-controls label {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.filter-controls input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.filter-controls button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-controls button:hover {
+    background-color: #3182ce;
+}
+
+.filter-controls button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+}

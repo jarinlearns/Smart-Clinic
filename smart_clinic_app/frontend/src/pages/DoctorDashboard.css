@@ -1,0 +1,81 @@
+.doctor-dashboard {
+  max-width: 1600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.doctor-dashboard h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.quick-actions {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.action-button {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.action-button.secondary { background-color: #6c757d; color: white; }
+.action-button.secondary:hover { background-color: #5a6268; }
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eef2f7;
+}
+.item-symptoms {
+  color: #64748b;
+  font-style: italic;
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+.start-consult-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.start-consult-btn:hover {
+  background-color: #0056b3;
+  transition:  all 0.2s ease-in-out;
+}
+
+.item-list .item-count {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.remove-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 0.5rem;
+}
+
+.remove-btn:hover {
+  background-color: #c53030;
+  transition:  all 0.2s ease-in-out;
+}
+
+

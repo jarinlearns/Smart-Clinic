@@ -1,0 +1,109 @@
+/* Container: Uses the body's new #f0f4f8 background naturally */
+.landing-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem; /* Increased gap for better breathing room */
+  min-height: 80vh; /* Slightly taller */
+  padding: 2rem 5%; /* Use % for better responsiveness */
+  max-width: 1400px; /* Prevents it from stretching too wide on huge screens */
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* NEW: Adds a gentle floating animation */
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800; /* Extra bold to match the new Logo weight */
+  line-height: 1.1;
+  
+  /* CHANGED: Navy Blue to match your Logo */
+  color: #1a365d; 
+  
+  margin: 0;
+  letter-spacing: -1px; /* Tighter spacing for a modern look */
+}
+
+.hero-content .highlight {
+  /* CHANGED: A vibrant blue that complements the Navy */
+  color: #3182ce; 
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.6; /* Better readability */
+  color: #4a5568; /* Stays grey for contrast */
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 550px;
+}
+
+/* --- CTA BUTTON REFINED --- */
+.hero-content .cta-button {
+  /* CHANGED: Subtle gradient for depth */
+  background: linear-gradient(135deg, #005acd 0%, #0045a1 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.8rem; /* Slightly wider */
+  border-radius: 30px; /* Pill shape is very trendy in medical SaaS */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 90, 205, 0.2); /* Soft blue shadow */
+}
+
+.hero-content .cta-button:hover {
+  transform: translateY(-3px); /* Lifts up */
+  box-shadow: 0 10px 15px rgba(0, 90, 205, 0.3); /* Shadow grows */
+  background: linear-gradient(135deg, #006eff 0%, #0056b3 100%); /* Brighter on hover */
+}
+
+.landing-image {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 20px; /* Softer corners */
+  /* CHANGED: A much softer, larger shadow for a "floating" feel */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); 
+}
+
+/* --- ANIMATION --- */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 968px) {
+  .landing-container {
+    flex-direction: column-reverse; /* Text on top, image on bottom for mobile? Usually Image Top or Text Top depending on preference. Column-reverse puts text bottom. Let's do standard column. */
+    flex-direction: column; 
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .hero-content {
+    margin-bottom: 3rem;
+    align-items: center; /* Centers text if flex direction is column */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}

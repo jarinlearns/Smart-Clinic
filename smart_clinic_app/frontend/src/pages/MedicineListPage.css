@@ -1,0 +1,240 @@
+
+
+
+.medicine-list-container {
+  padding: 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; 
+  gap: 1rem; 
+}
+
+.list-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;        
+  width: 100%;      
+  margin-top: 1rem; 
+}
+
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-button.primary {
+  background-color: #005acd; 
+  color: white;
+}
+.action-button.primary:hover {
+  background-color: #0045a1;
+  transform: translateY(-2px);
+}
+
+.action-button.secondary {
+  background-color: #6c757d; 
+  color: white;
+}
+.action-button.secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+
+
+.medicines-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden; 
+}
+.medicines-table .th-quantity {
+  width: 10%; 
+}
+
+.medicines-table .th-supplier {
+  width: 20%;
+}
+
+.medicines-table .th-actions {
+  width: 15%; 
+  text-align: center; 
+}
+
+.medicines-table td:last-child {
+    text-align: center;
+}
+.medicines-table th,
+.medicines-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.medicines-table thead th {
+  background-color: #f8fafc;
+  color: #4a5568;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.medicines-table tbody tr:hover {
+  background-color: #f0f7ff;
+}
+
+
+
+.inline-edit-input,
+.inline-edit-select {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid #005acd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdff;
+  transition: all 0.2s ease-in-out;
+}
+
+.inline-edit-input:focus,
+.inline-edit-select:focus {
+  outline: none;
+  border-color: #0093cb;
+  box-shadow: 0 0 0 3px rgba(0, 90, 205, 0.15);
+  background-color: #fff;
+}
+
+.medicines-table th:nth-child(6),
+.medicines-table td:nth-child(6) {
+    min-width: 110px; 
+}
+
+.medicines-table th:nth-child(3),
+.medicines-table td:nth-child(3) {
+    min-width: 200px; 
+}
+
+.table-action-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-button {
+  background-color: #005bbd;
+  color: white;
+}
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+
+.save-button {
+  background-color: #9ae6b4; 
+  color: #2f855a;
+}
+.save-button:hover {
+  background-color: #68d391;
+}
+
+.cancel-button {
+  background-color: #feb2b2; 
+  color: #c53030; 
+}
+.cancel-button:hover {
+  background-color: #ff9797;
+}
+
+.delete-button {
+  background-color: #6c757d;
+  color: white;
+}
+.delete-button:hover {
+  background-color: #5a6268;
+}
+
+.medicines-table thead th button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+
+.search-bar-container {
+  flex-grow: 1; 
+  margin: 0 2rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px; 
+  padding: 0.75rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+.search-input:focus {
+  outline: none;
+  border-color: #005acd;
+  box-shadow: 0 0 0 3px rgba(0, 90, 205, 0.15);
+}
+.medicines-table .th-actions {
+  width: 280px; 
+  text-align: center;
+}
+
+.medicines-table .actions-cell {
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.table-action-button.add-stock-button {
+  background-color: #17a2b8; 
+  color: white;
+}
+.table-action-button.add-stock-button:hover {
+  background-color: #138496;
+}

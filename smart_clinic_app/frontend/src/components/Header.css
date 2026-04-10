@@ -1,0 +1,88 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: linear-gradient(to left, #f0f4f8, rgb(154, 203, 255)); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 70px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.header .brand-link {
+  font-size:1.8rem; 
+  font-weight: 800; 
+  
+  
+  color: #1a365d; 
+  
+  text-decoration: none;
+  letter-spacing: -0.5px; 
+  
+  
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+
+.header .nav-link {
+  color: #000000; 
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 2rem; 
+  transition: color 0.2s ease-in-out;
+}
+
+.header .nav-link:hover {
+  color: #005acd;
+}
+
+
+.header .user-greeting {
+  color: #000000;
+  margin-left: 2rem;
+}
+
+
+.header .logout-button {
+  background-color: #005acd;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem; 
+  border-radius: 8px; 
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.header .logout-button:hover {
+  background-color: #0093cb;
+  box-shadow: 0 4px 12px rgba(0, 90, 205, 0.2); 
+  transform: translateY(-2px); 
+}
+
+.header .account-settings-button {
+  background-color: #3d68c0;
+  color: #ffffff; 
+  border: none;
+  padding: 0.6rem 1.2rem; 
+  border-radius: 8px; 
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.header .account-settings-button:hover {
+  background-color: #0093cb;
+  box-shadow: 0 4px 12px rgba(0, 90, 205, 0.2); 
+  transform: translateY(-2px); 
+}

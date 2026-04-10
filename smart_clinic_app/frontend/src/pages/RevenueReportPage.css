@@ -1,0 +1,116 @@
+.revenue-report-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+
+.table-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.revenue-table th, .revenue-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eef2f7;
+}
+.search-container{
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.revenue-table thead th button {
+  background: none; border: none; color: inherit; font-family: inherit;
+  font-size: inherit; font-weight: inherit; text-transform: inherit;
+  cursor: pointer; padding: 0; text-align: left; width: 100%;
+  
+}
+.sortable-header {
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.2s ease;
+}
+
+.sortable-header:hover {
+    background-color: #e2e8f0;
+}
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.status-unpaid {
+    background-color: #cfb015;
+    color: #d48806;
+}
+.status-paid {
+    background-color: #78df12;
+    color: #52c41a;
+}
+
+
+.mark-paid-btn {
+    background-color: #17a2b8; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.mark-paid-btn:hover {
+    background-color: #138496;
+}
+
+
+.stats-container-revenue {
+  display: flex;
+  gap: 2rem; 
+  margin: 2rem;
+}
+
+.stat-card-revenue {
+  flex: 1; 
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card-revenue h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.stat-card-revenue p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #2d3748;
+}
+
+
+.total-revenue-card {
+  border-left: 5px solid #4299e1; 
+}
+
+.paid-revenue-card {
+  border-left: 5px solid #48bb78; 
+}

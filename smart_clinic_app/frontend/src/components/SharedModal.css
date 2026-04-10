@@ -1,0 +1,243 @@
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+
+  
+  overflow-y: auto; 
+  align-items: flex-start; 
+  padding: 4rem 1rem; 
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  animation: popIn 0.3s ease-out;
+
+  
+  margin: auto; 
+}
+
+.modal-content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #1a202c;
+}
+
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #005acd;
+  box-shadow: 0 0 0 3px rgba(0, 90, 205, 0.15);
+}
+
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modal-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-actions button:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.modal-actions .cancel-button {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+.modal-actions .cancel-button:hover {
+  background-color: #cbd5e0;
+}
+
+.modal-actions .add-button,
+.modal-actions .fill-button {
+  background-color: #005acd;
+  color: white;
+}
+.modal-actions .add-button:hover,
+.modal-actions .fill-button:hover {
+  background-color: #0045a1;
+}
+
+
+.modal-content.prescription-modal {
+  max-width: 700px;
+  padding: 0; 
+}
+
+.prescription-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.prescription-modal .modal-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.prescription-modal .close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #a0aec0;
+}
+
+.prescription-modal .prescription-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1.5rem;
+  background-color: #f8fafc;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.prescription-modal .prescription-section {
+  padding: 1.5rem 2rem;
+}
+
+.prescription-modal .notes-box {
+  background-color: #f8fafc;
+  border: 1px solid #eef2f7;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.prescription-modal .medicines-prescribed-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prescription-modal .medicines-prescribed-table th,
+.prescription-modal .medicines-prescribed-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.prescription-modal .modal-actions {
+  padding: 1.5rem 2rem;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.prescription-modal .fill-button {
+    background-color: #28a745;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.modal-actions .total-bill {
+  margin-right: auto; 
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #1a202c;
+}
+
+.modal-actions .total-bill strong {
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+
+
+.prescription-modal.large {
+  max-width: 900px; 
+}
+
+.medicines-prescribed-table.interactive th,
+.medicines-prescribed-table.interactive td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.medicines-prescribed-table.interactive td:nth-child(2) {
+  text-align: left; 
+}
+
+.quantity-input {
+  width: 70px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.fill-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
